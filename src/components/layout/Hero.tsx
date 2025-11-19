@@ -49,7 +49,7 @@ export function Hero() {
                         href="https://www.ycombinator.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors cursor-pointer"
+                        className="flex items-center gap-2 px-4 py-2 rounded-full bg-black/80 border border-white/10 backdrop-blur-sm hover:bg-black/90 hover:border-white/20 transition-all cursor-pointer"
                     >
                         <div className="flex items-center justify-center w-6 h-6 bg-[#F26522] rounded-sm text-white font-bold text-xs">Y</div>
                         <span className="text-sm font-medium text-white/80">Combinator</span>
