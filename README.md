@@ -24,6 +24,25 @@ A pixel-perfect, production-grade replica of the Axiom Trade cryptocurrency trad
 
 ---
 
+## 📸 Screenshots
+
+### Hero Section
+![Hero Section - Gateway to DeFi](screenshots/hero-section.png)
+
+### Token Discovery Table
+![Real-time Token Table with Live Prices](screenshots/token-table.png)
+
+### Advanced Features
+![Trading Features and Order Execution](screenshots/features-section.png)
+
+### Rewards System
+![Rewards, Rankings, and Referrals](screenshots/rewards-section.png)
+
+### Loading States
+![Skeleton Loading Animation](screenshots/table-loading.png)
+
+---
+
 ## ✨ Features
 
 ### 🎨 **Landing Page**
