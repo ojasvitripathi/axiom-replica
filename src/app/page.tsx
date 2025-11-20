@@ -1,11 +1,28 @@
+import dynamic from 'next/dynamic';
 import { Navbar } from '@/components/layout/Navbar';
 import { Hero } from '@/components/layout/Hero';
-import { FeatureSection } from '@/components/layout/FeatureSection';
-import { RewardsSection } from '@/components/layout/RewardsSection';
-import { ArchitectureSection } from '@/components/layout/ArchitectureSection';
-import { FAQSection } from '@/components/layout/FAQSection';
-import { Footer } from '@/components/layout/Footer';
 import { TableSection } from '@/components/sections/TableSection';
+
+// Lazy load below-the-fold components for better performance
+const FeatureSection = dynamic(() => import('@/components/layout/FeatureSection').then(mod => ({ default: mod.FeatureSection })), {
+  loading: () => <div className="h-96" />, // Prevent layout shift
+});
+
+const RewardsSection = dynamic(() => import('@/components/layout/RewardsSection').then(mod => ({ default: mod.RewardsSection })), {
+  loading: () => <div className="h-96" />,
+});
+
+const ArchitectureSection = dynamic(() => import('@/components/layout/ArchitectureSection').then(mod => ({ default: mod.ArchitectureSection })), {
+  loading: () => <div className="h-96" />,
+});
+
+const FAQSection = dynamic(() => import('@/components/layout/FAQSection').then(mod => ({ default: mod.FAQSection })), {
+  loading: () => <div className="h-96" />,
+});
+
+const Footer = dynamic(() => import('@/components/layout/Footer').then(mod => ({ default: mod.Footer })), {
+  loading: () => <div className="h-32" />,
+});
 
 export default function Home() {
   return (

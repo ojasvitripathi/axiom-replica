@@ -30,8 +30,10 @@ export function TokenRow({ token, onClick }: TokenRowProps) {
                                 <Image
                                     src={token.logoUrl}
                                     alt={token.name}
-                                    fill
+                                    width={32}
+                                    height={32}
                                     className="object-cover"
+                                    loading="lazy"
                                     unoptimized
                                 />
                             </div>

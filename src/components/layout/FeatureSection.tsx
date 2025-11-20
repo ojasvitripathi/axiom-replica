@@ -117,6 +117,7 @@ export function FeatureSection() {
                         loop
                         muted
                         playsInline
+                        preload="none"
                         className="absolute inset-0 w-full h-full object-cover"
                     >
                         <source src="/land-on-two-blocks.mp4" type="video/mp4" />
